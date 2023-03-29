@@ -1,0 +1,17 @@
+.logo {
+    width: 300px;
+}
+
+.navbarContainer {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 24px;
+    box-shadow: rgba(255, 197, 6, 0.1) 0px 4px 12px;
+}
+
+.loginLink {
+    border: 1px solid bisque;
+    padding: 8px 16px;
+}
