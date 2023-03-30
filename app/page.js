@@ -4,7 +4,7 @@ import styles from './page.module.css'
 import Link from 'next/link'
 import Hero from './components/HeroCard'
 import HeroCard from './components/HeroCard'
-import getHeros from '@/lib/hero'
+import { getHeros } from '@/lib/api'
 
 const inter = Inter({ subsets: ['latin'] })
 

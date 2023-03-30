@@ -9,7 +9,7 @@ export default function DashboardLayout({ children }) {
                 <Link href="/dashboard" className={styles.quickActions}>My Tasks</Link>
                 <Link href="/dashboard/myprofile" className={styles.quickActions}>My Profile</Link>
             </div>
-            <div>
+            <div className={styles.dashboardInnerContainer}>
                 {children}
             </div>
         </div>

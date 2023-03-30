@@ -1,3 +1,5 @@
+
+/* MAIN DASHBOARD SECTION */
 .dashboardContainer {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -10,10 +12,51 @@
     align-items: center;
     height: 100vh;
     background-color: bisque;
+    text-align: center;
 }
 
 .quickActions {
     width: 100%;
-    padding: 16px;
+    padding: 16px 0px;
     color: black;
+}
+
+.quickActionsContainer a {
+    text-decoration: none;
+    background-color: rgb(247, 167, 69);
+    width: 100%;
+}
+
+.quickActionsContainer a:hover {
+    background-color: aliceblue;
+}
+
+.dashboardInnerContainer {
+    height: 100vh;
+    overflow: auto;
+}
+
+
+/* MY TASKS DASHBOARD SECTION */
+.tableContainer {
+    width: 100%;
+    overflow: auto;
+    height: 100vh;
+}
+
+.tableContainer thead {
+    background-color: brown;
+}
+
+.tableContainer th {
+    color: white;
+}
+
+.tableContainer th, .tableContainer td {
+    padding: 16px;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+.tableContainer tr:nth-child(even) {
+    background-color: aliceblue;
 }
