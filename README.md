@@ -25,4 +25,7 @@ The backend requires no database integration - returning a hardcoded JSON would 
 A second page rendering a form with data fetched from the backend "My profile".
 The Logout button navigates back to the Home Page.
 
+## Deployed URL
+https://nextjsdashboard-weld.vercel.app/
+
 ## Developed by: Jasleen Kaur
