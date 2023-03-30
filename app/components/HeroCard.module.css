@@ -1,5 +1,7 @@
 .heroCard {
-    background-color: bisque;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: var(--secondary) 0px 1px 4px;
 }
 
 .heroImage {

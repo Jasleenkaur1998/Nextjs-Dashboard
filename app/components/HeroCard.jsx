@@ -9,9 +9,9 @@ export default async function HeroCard(props) {
         src={props?.user.avatar}
         alt={props?.user.first_name}
       />
-      <h1>
+      <h3>
         {props?.user.first_name} {props?.user.last_name}
-      </h1>
+      </h3>
     </div>
   );
 }

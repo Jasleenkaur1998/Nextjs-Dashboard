@@ -11,24 +11,25 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-color: bisque;
+    background-color: var(--secondary);
     text-align: center;
 }
 
 .quickActions {
     width: 100%;
     padding: 16px 0px;
-    color: black;
+    color: var(--white);
 }
 
 .quickActionsContainer a {
     text-decoration: none;
-    background-color: rgb(247, 167, 69);
+    background-color: var(--secondary-dark);
     width: 100%;
 }
 
 .quickActionsContainer a:hover {
-    background-color: aliceblue;
+    background-color: var(--primary);
+    color: var(--secondary-dark);
 }
 
 .dashboardInnerContainer {
@@ -45,18 +46,18 @@
 }
 
 .tableContainer thead {
-    background-color: brown;
+    background-color: var(--secondary-dark);
 }
 
 .tableContainer th {
-    color: white;
+    color: var(--white);
 }
 
 .tableContainer th, .tableContainer td {
     padding: 16px;
-    border: 1px solid rgb(235, 235, 235);
+    border: 1px solid var(--secondary)
 }
 
 .tableContainer tr:nth-child(even) {
-    background-color: aliceblue;
+    background-color: var(--secondary);
 }

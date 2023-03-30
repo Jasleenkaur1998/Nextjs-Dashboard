@@ -2,3 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --primary: #a1e9f3;
+  --secondary: #eeeeee;
+  --secondary-dark:#2c2c36;
+  --white: white;
+  --black: black;
+}

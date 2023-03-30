@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import styles from "./Navbar.module.css";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const slug = usePathname();
+  const loggedIn = slug === "/dashboard" ? true : false;
+
   return (
     <header>
       <nav>
@@ -13,7 +19,15 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className={styles.loginLink} href="dashboard">Login</Link>
+            {!loggedIn ? (
+              <Link className={styles.loginLink} href="dashboard">
+                Login
+              </Link>
+            ) : (
+              <Link className={styles.loginLink} href="/">
+                Logout
+              </Link>
+            )}
           </li>
         </ul>
       </nav>

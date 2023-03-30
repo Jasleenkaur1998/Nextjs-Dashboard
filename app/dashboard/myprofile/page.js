@@ -1,4 +1,5 @@
 import { getMyProfile } from '@/lib/api';
+import Link from 'next/link';
 import React from 'react'
 import styles from './Myprofile.module.css';
 
@@ -22,13 +23,14 @@ export default async function MyProfile() {
                 <input value={response.address.city} type="text" id="city" name="city" required />
 
                 <label htmlFor="street">Street</label>
-                <input value={response.address.city} type="text" id="street" name="street" required />
+                <input value={response.address.street} type="text" id="street" name="street" required />
             </fieldset>
 
             <label htmlFor="companyName">Company Name</label>
             <input value={response.company.name} type="text" id="companyName" name="companyName" required />
 
-            <button type="submit">Submit</button>
+            {/* Just adding a link since not doing anything with backend here! */}
+            <Link className={styles.submitForm} href="/dashboard">Submit</Link>
         </form>
     )
 }
