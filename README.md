@@ -1,38 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## ReactJs + NextJs 13 app
 
-## Getting Started
+## Objective: Create an application with React and Next that utilizes data fetching from an API. Apis listed here, used in this app
 
-First, run the development server:
+# For listing the tasks in dashboard
+- https://jsonplaceholder.typicode.com/todos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+# For listing the heros in home
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- https://reqres.in/api/users
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# For fetching profile information
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- https://jsonplaceholder.typicode.com/users/1
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Project Requirements: 
+1. Home page '/' with a very simple layout (Navbar with a logo and a Login button) and a Hero section as the content (you can provide any content like a hero image or a carousel component, but don't spend too much time on this hero section).
 
-## Learn More
+2. When you click the Login button, 
+Present a page '/dashboard' with a Left-side menu containing 2 menu items: "My Tasks" and "My Profile"
 
-To learn more about Next.js, take a look at the following resources:
+3. The content must be a table rendering data fetched from the backend (something like "My Tasks").
+The backend requires no database integration - returning a hardcoded JSON would be ok.
+A second page rendering a form with data fetched from the backend "My profile".
+The Logout button navigates back to the Home Page.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Developed by: Jasleen Kaur

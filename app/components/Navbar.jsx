@@ -7,7 +7,9 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const slug = usePathname();
-  const loggedIn = slug === "/dashboard" ? true : false;
+  // Since we are not handling authentication so just achieved this by handling
+  // conditional check
+  const loggedIn = slug.includes('/dashboard') ? true : false;
 
   return (
     <header>
@@ -15,7 +17,7 @@ export default function Navbar() {
         <ul className={styles.navbarContainer}>
           <li>
             <Link href="/">
-              <img className={styles.logo} src="./logo.png" alt="Logo" />
+              <img className={styles.logo} src="/logo.png" alt="Logo" />
             </Link>
           </li>
           <li>
