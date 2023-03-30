@@ -7,11 +7,19 @@
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 24px;
+    padding: 0px 24px;
     box-shadow: rgba(255, 197, 6, 0.1) 0px 4px 12px;
+    background-color: black;
 }
 
 .loginLink {
     border: 1px solid bisque;
     padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.loginLink:hover {
+    background-color: bisque;
+    color: black;
 }

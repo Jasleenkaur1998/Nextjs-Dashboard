@@ -12,8 +12,8 @@ export default function Navbar() {
               <img className={styles.logo} src="./logo.png" alt="" />
             </Link>
           </li>
-          <li className={styles.loginLink}>
-            <Link href="dashboard">Login</Link>
+          <li>
+            <Link className={styles.loginLink} href="dashboard">Login</Link>
           </li>
         </ul>
       </nav>
