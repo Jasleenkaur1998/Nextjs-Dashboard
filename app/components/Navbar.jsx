@@ -9,7 +9,7 @@ export default function Navbar() {
         <ul className={styles.navbarContainer}>
           <li>
             <Link href="/">
-              <img className={styles.logo} src="./logo.png" alt="" />
+              <img className={styles.logo} src="./logo.png" alt="Logo" />
             </Link>
           </li>
           <li>

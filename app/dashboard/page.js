@@ -17,9 +17,9 @@ export default async function Dashboard() {
 
             <tbody>
                 {
-                    response.map((todo) => {
+                    response.map((todo, index) => {
                         return (
-                            <tr>
+                            <tr key={index}>
                                 <td>{todo.id}</td>
                                 <td>{todo.title}</td>
                                 <td>{todo.completed ? "Completed" : "Not Completed"}</td>

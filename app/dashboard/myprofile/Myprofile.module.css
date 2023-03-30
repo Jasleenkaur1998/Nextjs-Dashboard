@@ -1,0 +1,34 @@
+.myprofileForm {
+    background-color: #6b919c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+}
+
+.myprofileForm label {
+    font-weight: bold;
+}
+
+.myprofileForm input {
+    padding: 10px;
+}
+
+.myprofileForm fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border: 1px solid yellow;
+}
+
+.myprofileForm button {
+    width: 300px;
+    margin: 0 auto;
+    padding:16px;
+    border-radius: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+}
